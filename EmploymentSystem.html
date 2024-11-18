@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management System</title>
+    <style>
+        body {
+            font-family: "Roboto", sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: royalblue;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav {
+            background-color: #333;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+        }
+        nav ul li a:hover {
+            background-color: #111;
+        }
+        main {
+            padding: 20px;
+        }
+        h2 {
+            color: #4CAF50;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="date"],
+        input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        a {
+            color: #4CAF50;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Employee Management System</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#registration">Registration</a></li>
+            <li><a href="#login">Login</a></li>
+            <li><a href="#finance">Finance</a></li>
+            <li><a href="#departments">Departments</a></li>
+            <li><a href="#procurement">Procurement</a></li>
+            <li><a href="#leave">Leave</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="registration">
+            <h2>Registration</h2>
+            <form>
+                <label for="fullname">Full Name</label>
+                <input type="text" id="fullname" name="fullname">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob">
+                <label for="address">Address</label>
+                <input type="text" id="address" name="address">
+                <label for="department">Department</label>
+                <input type="text" id="department" name="department">
+                <label for="position">Position</label>
+                <input type="text" id="position" name="position">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <label for="confirm_password">Confirm Password</label>
+                <input type="password" id="confirm_password" name="confirm_password">
+                <button type="submit">Register</button>
+                <button type="reset">Cancel</button>
+            </form>
+        </section>
+        <section id="login">
+            <h2>Login</h2>
+            <form>
+                <label for="username">Email Address/Username</label>
+                <input type="text" id="username" name="username">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password">
+                <button type="submit">Login</button>
+                <a href="#">Forgot Password?</a>
+                <a href="#registration">Register</a>
+            </form>
+        </section>
+        <section id="finance">
+            <h2>Finance</h2>
+            <ul>
+                <li>Salary Details
+                    <ul>
+                        <li><a href="#">View Pay Slips</a></li>
+                        <li><a href="#">Salary Structure</a></li>
+                    </ul>
+                </li>
+                <li>Expense Claims
+                    <ul>
+                        <li><a href="#">Submit Claim</a></li>
+                        <li><a href="#">View Claims History</a></li>
+                    </ul>
+                </li>
+                <li>Tax Information
+                    <ul>
+                        <li><a href="#">Tax Forms</a></li>
+                        <li><a href="#">Tax Deductions</a></li>
+                    </ul>
+                </li>
+                <li>Bonuses and Incentives
+                    <ul>
+                        <li><a href="#">View Bonuses</a></li>
+                        <li><a href="#">Performance-Based Incentives</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="departments">
+            <h2>Departments</h2>
+            <ul>
+                <li><a href="#">View Departments</a></li>
+                <li><a href="#">Add New Department</a></li>
+                <li><a href="#">Edit Department Details</a></li>
+                <li><a href="#">Assign Employees to Departments</a></li>
+            </ul>
+        </section>
+        <section id="procurement">
+            <h2>Procurement</h2>
+            <ul>
+                <li><a href="#">Raise Purchase Requests</a></li>
+                <li><a href="#">View Procurement Status</a></li>
+                <li><a href="#">Approve/Reject Requests</a></li>
+                <li><a href="#">Procurement History</a></li>
+            </ul>
+        </section>
+        <section id="leave">
+            <h2>Leave</h2>
+            <ul>
+                <li><a href="#">Apply for Leave</a></li>
+                <li><a href="#">View Leave Balance</a></li>
+                <li><a href="#">Approve/Reject Leave Requests</a></li>
+                <li><a href="#">Leave History</a></li>
+            </ul>
+        </section>
+    </main>
+</body>
+</html>
